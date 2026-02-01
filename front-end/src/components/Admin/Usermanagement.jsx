@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./UserManagement.css";
+import "./Usermanagement.css";
 
 const API_BASE = "http://localhost:9999";
 

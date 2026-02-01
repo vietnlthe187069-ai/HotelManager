@@ -9,7 +9,7 @@ import RequireRole from "./components/Protected/RequireRole";
 import RoleRedirect from "./components/Protected/RoleRedirect";
 
 import AdminLayout from "./components/Admin/AdminLayout";
-import UserManagement from "./components/Admin/UserManagement";
+import Usermanagement from "./components/Admin/Usermanagement";
 import Home from "./components/Home/Home";
 import BookingList from "./components/Receptionist/BookingList";
 import MaintenanceRequests from "./components/Maintenance/Requests";
@@ -67,7 +67,7 @@ export default function App() {
       <Route element={<RequireRole allowed={["ADMIN"]} />}>
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<AdminDashboard />} />
-          <Route path="users" element={<UserManagement />} />
+          <Route path="users" element={<Usermanagement />} />
         </Route>
       </Route>
 
